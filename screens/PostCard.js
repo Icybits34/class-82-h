@@ -31,5 +31,45 @@ render() {
             </View>
         </View>
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "black"
+    },
+    droidSafeArea: {
+        marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
+    },
+    profileImage: {
+        width: "100%",
+        height: "100%",
+        resizeMode: "contain"
+    },
+    appTitleTextContainer: {
+        flex: 0.8,
+        justifyContent: "center"
+    },
+    authorNameText: {
+        color: "white",
+        fontSize: RFValue(28)
+    },
+    cardContainer: {
+        flex: 0.85
+    },
+    actionContainer: {
+        justifyContent:"center",
+        alignItems:"center",
+        padding: RFValue(10)
+    },
+    captionContainer:{
+    },
+    captionText:{
+        fontSize:13,
+        color:"white",
+        paddingTop:RFValue(10)
+    },
+    postImage
+    
+})
+
     );
 }
